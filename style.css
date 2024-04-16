@@ -1,0 +1,119 @@
+:root {
+    --first-color: #d82b2b8f;
+    --op-first-color: #d82b2b;
+    --second-color: #d8c72b;
+    --op-second-color: #d8c72b98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: rgb(41, 43, 43);
+    color: #FFF;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 20px;
+    padding: 0px 80px;
+}
+
+.numbers span {
+    font-size: 4rem;
+}
+
+.canva {
+    margin-top: 100px;
+}
+
+
+.sum-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#first, #second, #result {
+    border: 5px solid var(--first-color);
+    box-shadow: 5px 5px 5px var(--op-second-color);
+    height: 20vh;
+    width: 20vw;
+    font-size: 4rem;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+#equal {
+    font-size: 4rem;
+}
+
+input {
+    width: 15vw;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    padding: 30px 50px;
+}
+
+.container {
+    margin: 50px auto;
+    text-align: center;
+}
+
+#rangeInput {
+    width: 100%;
+}
+
+#displayValue {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#confirm {
+    margin-top: 150px;
+    width: 40vw;
+    height: 20vh;
+    font-size: 5rem;
+}
+
+
+/* Estilo do ponteiro */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove o estilo padrão do ponteiro */
+    appearance: none;
+    width: 150px; /* largura da imagem */
+    height: 150px; /* altura da imagem */
+    background: url('./racing-car.svg') no-repeat; /* url da imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    cursor: pointer; /* Define o cursor como ponteiro */
+}
+
+/* Estilo da barra */
+input[type="range"] {
+    width: 80%; /* Largura total */
+    height: 20px; /* Altura da barra */
+    -webkit-appearance: none; /* Remove o estilo padrão */
+    appearance: none;
+    background: #ddd; /* Cor de fundo da barra */
+    border-radius: 5px; /* Borda arredondada */
+    outline: none; /* Remove a borda padrão */
+}
+
+/* Estilo da barra preenchida */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%; /* Largura total */
+    height: 10px; /* Altura da barra */
+    background: #000000; /* Cor de fundo da barra preenchida */
+    border-radius: 5px; /* Borda arredondada */
+    border: none; /* Remove a borda */
+}
